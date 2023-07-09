@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Introducción a JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="converciones">
+        <meta name="keywords" content="conver">
+        <meta name="author" content="Israel">
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap-utilities.min.css">
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap-grid.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Converciones en en JavaScript</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header"><h4>Temperatura</h4></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label" for="txtgrado">ingresa los grados</label>
+                                <input id="txtgrado" type="text" class="form-control"/>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn btn-outline-primary" onclick="calcularGrdos(1)">Fahrenheit</button>
+                                <button class="btn btn-outline-primary" onclick="calcularGrdos(2)">Kelvin</button>
+                                <button class="btn btn-outline-primary" onclick="calcularGrdos(3)">Cent&iacute;grados</button>
+                            </div>
+                            <div class="mt-4"> 
+                                <label class="form-label" for="txtResultado"></label>
+                                <input id="txtResultado" type="text"/>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header"><h4>Longitud</h4></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label" for="txtlongitud">ingresa los centimetros</label>
+                                <input id="txtlongitud" type="text" class="form-control"/>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn btn-outline-primary" onclick="calcularLongitud(1)">Centimetros</button>
+                                <button class="btn btn-outline-primary" onclick="calcularLongitud(2)">Pulgadas</button>
+                                <button class="btn btn-outline-primary" onclick="calcularLongitud(3)">Pies</button>
+                                <button class="btn btn-outline-primary" onclick="calcularLongitud(4)">Yardas</button>
+                                <button class="btn btn-outline-primary" onclick="calcularLongitud(5)">Millas</button>
+                            </div>
+                            <div class="mt-4"> 
+                                <label class="form-label" for="txtResultado2"></label>
+                                <input id="txtResultado2" type="text"/>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header"><h4>Divisas</h4></div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-label" for="txtpesos">ingresa los grados</label>
+                                <input id="txtpesos" type="text" class="form-control"/>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(1)">Peso mexicano</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(2)">D&oacute;lar estadounidense</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(3)">D&oacute;lar canadiense</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(4)">Euro</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(5)">Libra esterlina</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(6)">Peso chileno</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(7)">Peso uruguayo</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(8)">Rupia</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(9)">Yen</button>
+                                <button class="btn btn-outline-primary" onclick="calcularPesos(10)">Zloty</button>
+                            </div>
+                            <div class="mt-4"> 
+                                <label class="form-label" for="txtResultado3"></label>
+                                <input id="txtResultado3" type="text"/>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="style/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="style/sweetalert2/sweetalert2.all.min.js"></script>
+        <script src="js/converciones.js"></script>
+    </body>
+</html>
